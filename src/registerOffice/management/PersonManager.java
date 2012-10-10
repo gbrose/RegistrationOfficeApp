@@ -9,9 +9,19 @@ public class PersonManager implements ManagerInterface<Person>{
 	private List<Person> persons=DatabaseContext.getPersons();
 	
 	@Override
-	public Person get() {
-		// TODO Auto-generated method stub
-		return null;
+	public Person get(Condition<Person> c) {
+		Person result = null;
+		
+		for(Person p:persons)
+		{
+			if(c.check(p))
+			{
+				result=p;
+				break;
+			}
+		}
+		
+		return result;
 	}
 
 	@Override
