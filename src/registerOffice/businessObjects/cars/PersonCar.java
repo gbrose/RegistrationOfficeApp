@@ -6,9 +6,6 @@ public class PersonCar extends Car{
 	
 	//pola prywatne
 	
-	private String mark;
-	private String registerNumber;
-	
 	//pola publiczne
 	
 	//konstruktory
@@ -24,21 +21,6 @@ public class PersonCar extends Car{
 	}
 	
 	//wlasciwosci
-	public String getMark() {
-		return mark;
-	}
-
-	public void setMark(String mark) {
-		this.mark = mark;
-	}
-
-	public String getRegisterNumber() {
-		return registerNumber;
-	}
-
-	public void setRegisterNumber(String registerNumber) {
-		this.registerNumber = registerNumber;
-	}
 	
 	//metody
 	
